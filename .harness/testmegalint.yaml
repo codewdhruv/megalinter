@@ -34,4 +34,4 @@ pipeline:
                     uses: oxsecurity/megalinter/flavors/javascript@beta
                     env:
                       VALIDATE_ALL_CODEBASE: "true"
-                      GITHUB_TOKEN: ghp
+                      GITHUB_TOKEN: <+secrets.getValue("junepat")>
